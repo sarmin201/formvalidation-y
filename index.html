@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"
+</head>
+<body>
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-5">
+                <div class="card">
+                    <div class="card-header">
+                        <h2>Create an account</h2>
+                    </div>
+                    <div class="card-body">
+                        <form action="" id="user_create_form">
+                            <div class="my-3">
+                                <label for="">Name</label>
+                                <input  id="name" type="text" class="form-control" onkeyup="validateName()">
+                                <span id="name-error"></span>
+
+                            </div>
+                            <div class="my-3">
+                                <label for="">Email</label>
+                                <input  id="email" type="email" class="form-control" onkeyup="validateEmail()">
+                                <span id="email-error"></span>
+
+
+                            </div>
+                            <div class="my-3">
+                                <label for="">Phone Number</label>
+                                <input  id="cell" type="tel" class="form-control" onkeyup="validatePhone()">
+                                <span id="phone-error"></span>
+
+
+                            </div>
+                            <div class="my-3">
+                                <label for="">Message</label>
+                                <textarea  id="message"  rows ="5 "class="form-control" onkeyup="validateMessage()"></textarea>
+                                <span id="message-error"></span>
+
+
+                            </div>
+                            <div class="my-3">
+                                <button class="btn btn-primary" type="submit" onclick=" return validateForm()">Create</button><br>
+                                <span id="submit-error"></span>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+ 
+<script src="app.js"></script>    
+</body>
+</html>
